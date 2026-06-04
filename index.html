@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Expense Tracker</h1>
+        <input type="text" id="expenseinput" placeholder="Enter the Expense">
+        <button onclick="addExpense()">Add Expense</button>
+    </div>
+    <div class="box">
+        <h2>Expense List</h2>
+        <p id="list">
+            No expenses added yet.
+        </p>
+    </div>
+    <hr>
+    <hr>
+    <h3>Range Query</h3>
+    <input type="number" id="l" placeholder="Start Index">
+    <input type="number" id="r" placeholder="End Index">
+    <button onclick="findTotal()">Calculate Total Expenses</button>
+    <div id="output" class="result">Results will appear here.</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
